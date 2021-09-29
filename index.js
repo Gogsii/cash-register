@@ -1,5 +1,5 @@
 //I begin by creating an array of objects for the currency denoms, in descending order, I will use it as a reference later
-const denominations = [
+const denoms = [
     { name: "ONE HUNDRED", val: 100.0 },
     { name: "TWENTY", val: 20.0 },
     { name: "TEN", val: 10.0 },
@@ -40,7 +40,7 @@ const denominations = [
     }
   
   //here I create a new array to store the returned change into, by running a reducer function on denominations
-    let change_arr = denominations.reduce(function(acc, curr) {
+    let change_arr = denoms.reduce(function(acc, curr) {
       var value = 0;
       //here I run a while loop to keep checking and extracting the denom value from biggest to smallest amounts
       while (register[curr.name] > 0 && change >= curr.val) {
