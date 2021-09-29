@@ -51,7 +51,8 @@ const denoms = [
         change = change.toFixed(2); //this limits the floating integer to only 2 decimal points
       }
   
-      //meaning if there is a positive value to return at all
+      //this is the equivalent to taking the cash out of the register and holding it in your hand
+      //if you have available cash in the register to return as change, push it to your hand to hold before you hand it to the customer
       if (value > 0) {
         acc.push([curr.name, value]); //pushes it into the initialized empty array (2nd parameter of reduce)
       }
