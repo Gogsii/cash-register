@@ -11,7 +11,7 @@ const denoms = [
     { name: "PENNY", val: 0.01 }
   ];
   
-  //I create a function to check if I have just enough change in the register or if I am short on change
+  //I create a function to check if I have enough change in the register or if I am short on change
   function checkCashRegister(price, cash, cid) {
     let output = { status: '', change: [] }; //since the problem asks for an output in the format of an object
     let change = cash - price; //this is the required amount of change I need to return to the costumer
